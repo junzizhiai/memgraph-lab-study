@@ -1,0 +1,1 @@
+# memgraph-lab-study
