@@ -1,0 +1,12 @@
+import { ILlmAzureOpenAISetup, ILlmOpenAISetup, ILlmAzureVerificationRequest, ILlmOllamaVerificationRequest, ILlmOpenAIVerificationRequest, ILlmRequest, ILlmVerificationResponse, IMemgraphTextQueryResult } from '../models/llm';
+import { ResponseSingle } from './common';
+export declare type PostLlmRequest = ILlmRequest;
+export declare type PostLlmResponse = ResponseSingle<IMemgraphTextQueryResult>;
+export declare type PostLlmOpenAIKeyVerificationRequest = ILlmOpenAIVerificationRequest;
+export declare type PostLlmOpenAIKeyVerificationResponse = ResponseSingle<ILlmVerificationResponse>;
+export declare type PostLlmAzureSetupVerificationRequest = ILlmAzureVerificationRequest;
+export declare type PostLlmAzureSetupVerificationResponse = ResponseSingle<ILlmVerificationResponse>;
+export declare type PostLlmOllamaSetupVerificationRequest = ILlmOllamaVerificationRequest;
+export declare type PostLlmOllamaSetupVerificationResponse = ResponseSingle<ILlmVerificationResponse>;
+export declare type PostLlmVerificationRequest = ILlmOpenAISetup | ILlmAzureOpenAISetup;
+export declare type PostLlmVerificationResponse = ResponseSingle<ILlmVerificationResponse>;

@@ -1,0 +1,11 @@
+import { ResponseEmpty, ResponseMultiple, ResponseSingle } from './common';
+import { CreateMemgraphStream, MemgraphDetailedStream, MemgraphStream, MemgraphStreamDryRunOptions, MemgraphStreamDryRunResult } from '../models/memgraph-stream';
+export declare type GetStreamsResponse = ResponseMultiple<MemgraphStream>;
+export declare type GetStreamResponse = ResponseSingle<MemgraphDetailedStream>;
+export declare type PostStreamRequest = CreateMemgraphStream;
+export declare type PostStreamResponse = ResponseSingle<MemgraphDetailedStream>;
+export declare type DeleteStreamResponse = ResponseEmpty;
+export declare type PostStreamDryRunRequest = MemgraphStreamDryRunOptions;
+export declare type PostStreamDryRunResponse = ResponseMultiple<MemgraphStreamDryRunResult>;
+export declare type PostStreamStartResponse = ResponseSingle<MemgraphDetailedStream>;
+export declare type PostStreamStopResponse = ResponseSingle<MemgraphDetailedStream>;
